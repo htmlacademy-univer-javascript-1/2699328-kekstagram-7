@@ -25,3 +25,7 @@ const extractNumber = (value) => {
 
   return result === '' ? NaN : parseInt(result, 10);
 };
+
+checkStringLength('проверяемая строка', 20);
+isPalindrome('топот');
+extractNumber('2023 год');
