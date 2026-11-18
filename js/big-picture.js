@@ -93,7 +93,15 @@ const openBigPicture = ({url, description, likes, comments}) => {
   document.addEventListener('keydown', onEscKeydown);
 };
 
-closeButton.addEventListener('click', closeBigPicture);
-commentsLoader.addEventListener('click', renderComments);
+const onCloseButtonClick = () => {
+  closeBigPicture();
+};
+
+const onCommentsLoaderClick = () => {
+  renderComments();
+};
+
+closeButton.addEventListener('click', onCloseButtonClick);
+commentsLoader.addEventListener('click', onCommentsLoaderClick);
 
 export {openBigPicture};
