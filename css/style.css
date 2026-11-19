@@ -697,6 +697,20 @@ main {
   border-radius: 5px;
 }
 
+.img-upload__error {
+  max-width: 450px;
+  margin: 5px auto 15px;
+  color: #ffb4b4;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.img-upload__field-wrapper--error .text__hashtags,
+.img-upload__field-wrapper--error .text__description {
+  outline: 2px solid #ffb4b4;
+}
+
 
 /**
  * Кнопка для отправки изображения
