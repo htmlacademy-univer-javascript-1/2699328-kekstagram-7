@@ -553,6 +553,11 @@ main {
   display: none;
 }
 
+.effect-level__slider {
+  width: 440px;
+  margin: 7px auto;
+}
+
 
 /**
  * Блок с эффектами, которые можно применить к изображению

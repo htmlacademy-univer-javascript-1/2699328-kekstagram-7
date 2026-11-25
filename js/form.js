@@ -1,3 +1,5 @@
+import {resetScale} from './scale.js';
+import {resetEffects} from './effects.js';
 import {isEscapeKey} from './util.js';
 
 const MAX_HASHTAG_COUNT = 5;
@@ -53,6 +55,8 @@ const closeForm = () => {
   document.body.classList.remove('modal-open');
   document.removeEventListener('keydown', onFormEscKeydown);
   form.reset();
+  resetScale();
+  resetEffects();
   fileInput.value = '';
   pristine.reset();
 
